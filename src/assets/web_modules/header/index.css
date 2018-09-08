@@ -1,0 +1,73 @@
+/**
+ * @define Header
+ *
+ * The header of the site
+ */
+
+.Header {
+  background: var(--dark-blue);
+
+}
+
+.Header-logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 8px 16px;
+}
+
+.Header-logoBridge {
+  background: url("logo-bridge.svg") no-repeat 50% 50%;
+  background-size: 100% 100%;
+  display: block;
+  height: 25px;
+  margin-right: 6px;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 61px;
+}
+
+.Header-logoText {
+  background: url("logo-text.svg") no-repeat 50% 50%;
+  background-size: 100% 100%;
+  display: block;
+  height: 14px;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 140px;
+}
+
+.Header-logo:active {
+  transform: translate(0, 1px);
+}
+
+@media (--md-viewport) {
+
+  .Header-logo {
+    height: 72px;
+    padding: 0 0 0 16px;
+  }
+
+  .Header-logoBridge {
+    height: 40px;
+    margin: 0 8px 6px 0;
+    width: 98px;
+  }
+
+  .Header-logoText {
+    height: 18px;
+    width: 180px;
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Header {
+    border-bottom: 4px solid var(--blue);
+  }
+
+  .Header-logo {
+    justify-content: flex-start;
+    padding-left: 24px;
+  }
+}

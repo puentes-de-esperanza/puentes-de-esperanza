@@ -1,0 +1,109 @@
+/**
+ * @define Action
+ *
+ * Call to actions, whether subtle or button-like
+ */
+
+.Action {
+  border: 1px dotted var(--blue);
+  border-width: 1px 0;
+  color: var(--blue);
+  cursor: pointer;
+  display: inline-block;
+  font: 400 14px/20px KarlaWeb, sans-serif;
+  font-feature-settings: "liga" 1, "kern";
+  padding: 4px 24px 4px 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Action::after {
+  content: "→";
+  font-size: 16px;
+  line-height: 1;
+  margin-top: -8px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.Action:hover {
+  border-style: solid;
+}
+
+.Action:active {
+  box-shadow: none;
+  transform: translate(0, 1px);
+}
+
+@media (--md-viewport) {
+
+  .Action {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .Action::after {
+    font-size: 18px;
+    margin-top: -9px;
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Action {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .Action::after {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+}
+
+/**
+ * Inverse
+ */
+
+.Action--inverse {
+  border-color: white;
+  border-top-width: 0;
+  color: white;
+}
+
+/**
+ * Primary
+ */
+
+.Action--primary {
+  background: var(--blue);
+  border: 1px solid var(--dark-blue);
+  border-radius: 2px;
+  box-shadow: 0 2px 2px color(black a(20%));
+  color: white;
+  padding-left: 24px;
+  padding-right: 48px;
+}
+
+.Action--primary::after {
+  right: 24px;
+}
+
+.Action--primary:hover {
+  background: color(var(--blue) l(+5%));
+}
+
+/**
+ * Donate
+ */
+
+.Action--donate {
+  background: var(--orange);
+  border: 1px solid var(--dark-orange);
+}
+
+.Action--donate:hover {
+  background: color(var(--orange) l(+5%));
+}

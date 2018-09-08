@@ -1,0 +1,75 @@
+/**
+ * @define Chrome
+ *
+ * Header, nav, footer containers
+ */
+
+@font-face {
+  font-family: "RalewayWeb";
+  font-style: normal;
+  font-weight: 400;
+  src: url("raleway-400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RalewayWeb";
+  font-style: normal;
+  font-weight: 300;
+  src: url("raleway-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "KarlaWeb";
+  font-style: normal;
+  font-weight: 400;
+  src: url("karla-400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "KarlaWeb";
+  font-style: italic;
+  font-weight: 400;
+  src: url("karla-400i.woff") format("woff");
+}
+
+@font-face {
+  font-family: "KarlaWeb";
+  font-style: normal;
+  font-weight: 700;
+  src: url("karla-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "KarlaWeb";
+  font-style: italic;
+  font-weight: 700;
+  src: url("karla-700i.woff") format("woff");
+}
+
+@media (--lg-viewport) {
+
+  .Chrome-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Chrome-header {
+    flex: 0 0 46%;
+    order: 1;
+  }
+
+  .Chrome-main {
+    flex: 0 0 100%;
+    order: 3;
+  }
+
+  .Chrome-navigation {
+    flex: 0 0 54%;
+    order: 2;
+  }
+
+  .Chrome-footer {
+    flex: 0 0 100%;
+    order: 4;
+  }
+}

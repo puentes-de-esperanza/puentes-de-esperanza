@@ -1,0 +1,48 @@
+{% extends "layouts/default.html" %}
+
+{% set id = "donate" %}
+{% set title = "Donate - Puentes de Esperanza" %}
+{% set description = "Donate to education-based programs in Nicaragua" %}
+
+{% block main %}
+<div class="ContentOptIn">
+  <h1>Donate</h1>
+
+  <p>We rely on the generosity of donors to continue and grow our projects.</p>
+
+  <p>Thanks to our donors, including many past guests of <a href="http://rancho-esperanza.com">Rancho Esperanza</a>, we have been able to raise over $13,000 in last two years. We hope to raise more this year to cover the increased budget that accompanies our improved programming. Donations are deductible to the full extent allowable under IRS regulations.</p>
+
+  <p><a href="http://rancho-esperanza.com">Rancho Esperanza</a> uses its revenues to cover all administrative costs of Puentes de Esperanza and some program costs, so you can be sure that 100% of your tax-deductible donation is being directly applied to the programs.</p>
+
+  <p>With your help we hope to:</p>
+
+  <ul>
+    <li>Grow the number of School Scholarships we can provide and improve the benefits they receive. $50 will provide a local primary school student with a uniform and school supplies for the entire year, $170 will send them to secondary school, including covering their bus transportation fees.</li>
+    <li>Increase the number of excellent students we send to private school, which includes a technical degree. $1,000 per year covers the tuition, uniforms, supplies, backpack, and transportation costs to and from El Viejo.</li>
+    <li>Host new capacity-building workshops for local teens and adults.</li>
+    <li>Supply the local primary teachers with all the teaching materials they need to provide a productive learning environment.</li>
+    <li>Ensure there are plenty of teaching materials and supplies for another successful year in our Kids Club, Tutoring Hour, English classes, and Computer classes.</li>
+    <li>Improve and maintain the infrastructure of the local primary and secondary school to ensure a safe and productive learning environment for the students.</li>
+  </ul>
+
+  <p>We use <em>PayPal Giving Fund</em>, where our non-profit pays no transaction fees, to securely process your credit/debit card donation online.</p>
+</div>
+
+<div class="Billboard" id="cta">
+  {#<div class="Billboard-action">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="HB7WJYVPEVMVN">
+      <button class="Action Action--primary Action--donate" name="submit">Make a donation on <em>PayPal</em></button>
+    </form>
+  </div>#}
+  <p class="Billboard-action">
+    <a class="Action Action--primary Action--donate" href="https://www.paypal.com/fundraiser/charity/113492">Make a {#<strong>one-time</strong>#} donation on <em>PayPal</em></a>
+  </p>
+</div>
+
+<div class="ContentOptIn">
+  <p>You can also send a check made payable to Puentes de Esperanza to 436 29th Street, West Palm Beach, FL 33407, USA. We will provide a tax deduction letter and receipt for each donation received.</p>
+</div>
+
+{% endblock %}

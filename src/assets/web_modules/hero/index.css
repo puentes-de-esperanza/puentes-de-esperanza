@@ -1,0 +1,53 @@
+/**
+ * @define Hero
+ *
+ * Welcome banner
+ */
+
+.Hero {
+  background: var(--blue);
+  padding: 0 16px 16px;
+  text-align: center;
+}
+
+.Hero-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.Hero-title {
+  display: none;
+}
+
+.Hero-description {
+  color: white;
+  font: 400 22px/28px RalewayWeb, sans-serif;
+  font-feature-settings: "liga" 1, "kern";
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+@media (--md-viewport) {
+
+  .Hero {
+    padding: 8px 24px 24px;
+  }
+
+  .Hero-description {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Hero {
+    padding: 28px 32px 32px;
+  }
+
+  .Hero-description {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "pde",
+  "version": "0.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/puentes-de-esperanza/puentes-de-esperanza.git"
+  },
+  "scripts": {
+    "test": "gulp --type production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^2.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlhint": "0.3.1",
+    "gulp-if": "^2.0.2",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-standard": "^9.0.0",
+    "gulp-typogr": "^1.0.0",
+    "gulp-uglify": "^2.0.1",
+    "postcss-bem-linter": "^2.7.0",
+    "postcss-calc": "^5.3.1",
+    "postcss-color-function": "^3.0.0",
+    "postcss-color-gray": "^3.0.1",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-image-inliner": "^1.0.6",
+    "postcss-import": "^9.1.0",
+    "postcss-reporter": "^3.0.0",
+    "require-dir": "^0.3.1",
+    "stylelint": "^7.9.0",
+    "stylelint-config-suitcss": "^9.0.0",
+    "yargs": "^7.0.1"
+  }
+}

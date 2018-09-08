@@ -1,0 +1,11 @@
+@custom-media --md-viewport (min-width: 600px);
+@custom-media --lg-viewport (min-width: 840px);
+
+:root {
+  --blue: #2196f3;
+  --dark-blue: #1976d2;
+  --dark-orange: #f57c00;
+  --grey: gray(62);
+  --light-blue: #f1fafe;
+  --orange: #ff9800;
+}

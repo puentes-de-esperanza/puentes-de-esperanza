@@ -1,0 +1,52 @@
+/**
+ * @define Billboard
+ *
+ * Standout call to action
+ */
+
+.Billboard {
+  background: var(--light-blue);
+  padding: 16px;
+}
+
+.Billboard-title {
+  color: color(black a(87%));
+  font: 400 16px/24px RalewayWeb, sans-serif;
+  font-feature-settings: "liga" 1, "kern";
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.Billboard-action {
+  text-align: center;
+}
+
+.Billboard-action:not(:first-child) {
+  margin-top: 8px;
+}
+
+@media (--md-viewport) {
+
+  .Billboard-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (--lg-viewport) {
+
+  .Billboard {
+    padding: 24px;
+  }
+
+  .Billboard-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .Billboard-action:not(:first-child) {
+    margin-top: 16px;
+  }
+}

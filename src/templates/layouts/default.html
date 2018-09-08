@@ -1,0 +1,52 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+
+<div class="Chrome-header">
+  <header class="Header" role="banner">
+    <a class="Header-logo" href="/"><span class="Header-logoBridge">Puentes</span><span class="Header-logoText">de Esperanza</span></a>
+  </header>
+</div>
+<div class="Chrome-navigation">
+  <nav class="Navigation" role="navigation">
+    <ul class="Navigation-inner">
+      <li class="Navigation-item">
+        <a class="Navigation-itemInner{% if id == 'programs' %} is-active{% endif %}" href="programs.html">Programs</a>
+      </li>
+      <li class="Navigation-item">
+        <a class="Navigation-itemInner{% if id == 'people' %} is-active{% endif %}" href="people.html">People</a>
+      </li>
+      <li class="Navigation-item Navigation-item--volunteer">
+        <a class="Navigation-itemInner{% if id == 'volunteer' %} is-active{% endif %}" href="volunteer.html">Volunteer</a>
+      </li>
+      <li class="Navigation-item Navigation-item--donate">
+        <a class="Navigation-itemInner Navigation-itemInner--donate{% if id == 'donate' %} is-active{% endif %}" href="donate.html">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="Chrome-main">
+  <main class="Main" role="main">
+    {% block main %}{% endblock %}
+  </main>
+</div>
+<div class="Chrome-footer">
+  <footer class="Footer" role="contentinfo">
+    <ul class="Footer-navigation">
+      <li class="Footer-navigationItem"><a class="Footer-navigationItemInner" href="tel:+50588791795">+505 8879 1795</a></li>
+      <li class="Footer-navigationItem"><a class="Footer-navigationItemInner" href="mailto:hello@puentes-de-esperanza.org">hello@puentes-de-esperanza.org</a></li>
+    </ul>
+    <p class="Footer-newsletter">
+      <a class="Footer-newsletterInner" href="http://eepurl.com/b4zwJr">Newsletter sign up</a> |
+      <a class="Footer-newsletterInner" href="http://us13.campaign-archive1.com/home/?u=5f871ba0aa9128b8641c72e83&id=addf17e76b">Newsletter archive</a>
+    </p>
+    <div class="Footer-flexEmbed">
+      <div class="FlexEmbed FlexEmbed--295by70">
+        <iframe class="FlexEmbed-item is-lazyLoad" data-src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpuentesdeesperanzaorg&amp;width=295&amp;height=70&amp;show_faces=false&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0"></iframe>
+      </div>
+    </div>
+    <p class="Footer-info">Puentes de Esperanza, Inc. is a <a class="Footer-link" href="http://www.guidestar.org/organizations/47-4569485/puentes-de-esperanza.aspx">non-profit 501(c)(3) organization</a>.</p>
+  </footer>
+</div>
+
+{% endblock %}
